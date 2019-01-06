@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-</RelativeLayout>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:minWidth="25px"
+	android:minHeight="25px"
+	android:orientation="vertical"
+	android:background="#ffffffff"
+	android:id="@+id/TranslateButton">
+	<TextView
+		android:text="Enter a Phoneword"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1"
+		android:padding="10px" />
+	<EditText
+		android:text="1-855-Xamarin"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/PhoneNumberText"
+		android:layout_below="@id/textView1" />
+	<Button
+		android:text="Translate"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/Translatebutton" />
+	<TextView
+		android:text="Text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/TranslatedPhoneword" />
+	<Button
+		android:text="@string/translationHistory"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/TranslationHistoryButton"
+		android:enabled="false"/>
+
+</LinearLayout>
